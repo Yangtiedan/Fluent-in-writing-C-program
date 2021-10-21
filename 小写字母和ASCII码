@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main(void)
+{
+	int ch = 'z';
+	
+	for (ch = 'a';ch <= 'z';ch++)
+		{
+		printf("ASII码中的 %c 的存储数值为 %d .\n", ch, ch);
+		}
+	return 0;
+}
