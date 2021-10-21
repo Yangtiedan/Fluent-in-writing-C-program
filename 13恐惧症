@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main(void)
+{
+ 	const int secret_code = 13;
+ 	int code_entered;
+ 	
+ 	do 
+	 {
+	 	printf("欢迎来到triskaidekaphobia俱乐部：\n");
+	 	printf("猜猜看想要的数字");
+	 	scanf("%d", &code_entered);
+	 }while (code_entered != secret_code);
+	 
+	 printf("13 13 13 13 13 13");
+	 return 0;
+}
