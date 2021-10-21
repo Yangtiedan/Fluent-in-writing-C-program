@@ -1,0 +1,30 @@
+# include<stdio.h>
+double power(double n, int p);
+
+int main(void)
+{
+	double x,xpow;
+	int exp;
+	
+	printf("请输入一个小数和一个整数\n");
+	while(scanf("%lf%d", &x, &exp) == 2)
+	{
+		xpow = pow(x, exp);
+		printf("%.3g 的 %d 次方的结果是 %.5g\n", x, exp, xpow);
+		printf("请再输入两个数，或者按q退出。");
+	}
+	printf("感谢您的使用。");
+	
+	return 0;
+}
+
+double power(double n, int p)
+{
+	double pow = 1;
+	int i;
+	
+	for (i = 1; i <= p; i++)
+		pow *= n;
+		
+	return 0;
+}
