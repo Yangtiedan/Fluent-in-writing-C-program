@@ -1,5 +1,5 @@
 # include<stdio.h>
-double power(double n, int p);
+double power(double n, int p); //声明原型
 
 int main(void)
 {
@@ -9,7 +9,7 @@ int main(void)
 	printf("请输入一个小数和一个整数\n");
 	while(scanf("%lf%d", &x, &exp) == 2)
 	{
-		xpow = pow(x, exp);
+		xpow = pow(x, exp); //函数调用
 		printf("%.3g 的 %d 次方的结果是 %.5g\n", x, exp, xpow);
 		printf("请再输入两个数，或者按q退出。");
 	}
@@ -18,7 +18,7 @@ int main(void)
 	return 0;
 }
 
-double power(double n, int p)
+double power(double n, int p) //函数定义
 {
 	double pow = 1;
 	int i;
